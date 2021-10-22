@@ -15,7 +15,7 @@ public class MatrizIntroducao{
                 System.out.print("Digite a nota: ");
                 soma += (aluno[linha][coluna]=in.nextDouble());
             }
-	        System.out.print("|== Média do aluno "+contagem+"°: "+(soma/=5)+" ==|");
+	        System.out.print("\n|== Média do aluno "+contagem+"°: "+(soma/=5)+" ==|\n\n");
 	        contagem++;
         }
     }
