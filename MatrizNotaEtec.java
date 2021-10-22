@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class MatrizNotaEtec{
     public static void main(String[] args) {
         double notas[][] = new double[2][4];
         int contagem = 1;
