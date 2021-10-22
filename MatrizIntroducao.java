@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class MatrizIntroducao{
     public static void main(String[] args) {
 
 	    double aluno[][] = new double[5][5];
