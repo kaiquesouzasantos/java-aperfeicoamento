@@ -1,1 +1,3 @@
-# java-aperfeicoamento
+# JAVA-APREFEIÇOAMENTO
+
+Diretório contendo códigos específicos em Java com o intuito de aperfeiçoamento e consolidação de conhecimento.
