@@ -11,7 +11,7 @@ public class ValidarCPF {
         }
     }
 
-    static public boolean CPF(String strCpf ) {
+    public static boolean CPF(String strCpf ) {
         int d1 = 0, d2 = 0, digito_01, digito_02, resto, digitoCPF;
         String ultimosDigitos;
 
