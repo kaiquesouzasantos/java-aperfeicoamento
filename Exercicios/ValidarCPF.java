@@ -1,4 +1,3 @@
-package ValidacaoCPF;
 import javax.swing.*;
 
 public class ValidarCPF {
