@@ -4,11 +4,8 @@ public class ValidarCPF {
     public static void main(String[] args) {
         String strCpf = JOptionPane.showInputDialog(null, "Digite o CPF que sera validado: ");
 
-        if(!CPF(strCpf)){
-            JOptionPane.showMessageDialog(null, "CPF INVALIDO!");
-        }else {
-            JOptionPane.showMessageDialog(null, "CPF VALIDO!");
-        }
+        if(!CPF(strCpf)){JOptionPane.showMessageDialog(null, "CPF INVALIDO!");
+        }else {JOptionPane.showMessageDialog(null, "CPF VALIDO!");}
     }
 
     public static boolean CPF(String strCpf ) {
@@ -17,7 +14,6 @@ public class ValidarCPF {
 
         strCpf = strCpf.replace("[-]", "");
         strCpf = strCpf.replace("[.]", "");
-
 
         if(strCpf.length() != 11) return false;
 
