@@ -51,8 +51,8 @@ public class InterfaceCadastroAmigo extends JFrame {
         JButton listar = new JButton();
         retornaButton(listar, "Listar", 310, 210, 100, 25);
 
-        cadastar.addActionListener(e -> cadastrarAmigo());
-        limpar.addActionListener(e -> limparCadastro());
+        cadastar.addActionListener(e -> listaAmigo.add("{NOME: "+nome.getText()+", APELIDO: "+apelido.getText()+", TELEFONE: "+telefone.getText()+"}"));
+        limpar.addActionListener(e -> {nome.setText("");apelido.setText("");telefone.setText("");});
         listar.addActionListener(e -> System.out.println(listaAmigo));
     }
 
@@ -66,7 +66,7 @@ public class InterfaceCadastroAmigo extends JFrame {
 
     public void retornaText(JTextField texto, int coluns, int x, int y, int width, int height){
         texto.setColumns(coluns);
-            texto.setForeground(Color.BLACK);
+        texto.setForeground(Color.BLACK);
         texto.setBounds(x, y, width, height);
         contentPane.add(texto);
     }
@@ -78,15 +78,5 @@ public class InterfaceCadastroAmigo extends JFrame {
         button.setBackground(SystemColor.controlHighlight);
         button.setBounds(x, y, width, height);
         contentPane.add(button);
-    }
-
-    public void cadastrarAmigo(){
-        listaAmigo.add("{NOME: "+nome.getText()+", APELIDO: "+apelido.getText()+", TELEFONE: "+telefone.getText()+"}");
-    }
-
-    public void limparCadastro(){
-        nome.setText("");
-        apelido.setText("");
-        telefone.setText("");
     }
 }
