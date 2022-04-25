@@ -36,7 +36,7 @@ public class ValidarCPF {
         }else {digito_02 = 11 - resto;}
 
         String verificacaoUltimosDigitos = strCpf.substring(strCpf.length() - 2);
-        ultimosDigitos = ""+digito_01+""+digito_02;
+        ultimosDigitos = digito_01+""+digito_02;
         return verificacaoUltimosDigitos.equals(ultimosDigitos);
     }
 }
