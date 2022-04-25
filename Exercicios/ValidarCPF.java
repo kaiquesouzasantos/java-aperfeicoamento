@@ -1,3 +1,4 @@
+package ValidacaoCPF;
 import javax.swing.*;
 
 public class ValidarCPF {
@@ -12,8 +13,8 @@ public class ValidarCPF {
         int d1 = 0, d2 = 0, digito_01, digito_02, resto, digitoCPF;
         String ultimosDigitos;
 
-        strCpf = strCpf.replace("[-]", "");
-        strCpf = strCpf.replace("[.]", "");
+        strCpf = strCpf.replace("-", "");
+        strCpf = strCpf.replace(".", "");
 
         if(strCpf.length() != 11) return false;
 
