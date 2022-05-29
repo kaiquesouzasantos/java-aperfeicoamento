@@ -16,7 +16,7 @@ public class MediaNotas {
                 contador+=1;
             }while(verificador.equalsIgnoreCase("sim") || verificador.equalsIgnoreCase("s"));
 
-            JOptionPane.showMessageDialog(null, "MEDIA ARITMEDICA DAS NOTAS: "+df.format(notas/contador));
+            JOptionPane.showMessageDialog(null, "MEDIA ARITMETICA DAS NOTAS: "+df.format(notas/contador));
         }catch (Exception e){
             System.exit(0);
         }finally {
