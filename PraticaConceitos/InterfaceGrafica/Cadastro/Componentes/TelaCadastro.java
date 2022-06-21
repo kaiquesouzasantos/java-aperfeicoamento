@@ -4,10 +4,7 @@ import javax.swing.*;
 public class TelaCadastro extends Tela {
 	public TelaCadastro() {
 		JFrame frame = new JFrame();
-		frame.setTitle("TELA DE CADASTRO");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(450, 600);
-		frame.setLayout(null);
+		retornaFrame(frame, "TELA DE CADASTRO", 450, 600);
 		
 		// TITULO
 		JPanel panelTitulo = new JPanel();
@@ -100,9 +97,6 @@ public class TelaCadastro extends Tela {
 		JButton btnCadastrar = new JButton();
 		retornaButton(btnCadastrar, "CADASTRAR", 215, 0, 170, 40, panelBotoes);
 
-		frame.add(panelBotoes);
-		frame.add(panelCampos);
-		frame.add(panelTitulo);
-		frame.setVisible(true);
+		adicionaPanel(new JPanel[]{panelTitulo, panelCampos, panelBotoes}, frame);
 	}
 }

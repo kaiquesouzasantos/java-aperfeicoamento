@@ -3,10 +3,8 @@ import javax.swing.*;
 
 public class TelaLogin extends Tela {
 	public TelaLogin() {
-		JFrame frame = new JFrame("Login");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(350, 380);
-		frame.setLayout(null);
+		JFrame frame = new JFrame();
+		retornaFrame(frame, "LOGIN", 350, 380);
 
 		// TITULO
 		JPanel panelTitulo = new JPanel();
@@ -56,12 +54,14 @@ public class TelaLogin extends Tela {
 		JButton btnEsqSenha = new JButton("Esqueci Senha");
 		retornaButton(btnEsqSenha, "ESQUECI SENHA", 110, 0, 120, 35, panelBotoes);
 
+		btnEsqSenha.addActionListener(e -> {
+			frame.setVisible(false);
+			new TelaSenha();
+		});
+
 		JButton btnEntrar = new JButton("Entrar");
 		retornaButton(btnEntrar, "ENTRAR", 235, 0, 95, 35, panelBotoes);
-		
-		frame.add(panelCampos);
-		frame.add(panelTitulo);
-		frame.add(panelBotoes);
-		frame.setVisible(true);
+
+		adicionaPanel(new JPanel[]{panelTitulo, panelCampos, panelBotoes}, frame);
 	}
 }

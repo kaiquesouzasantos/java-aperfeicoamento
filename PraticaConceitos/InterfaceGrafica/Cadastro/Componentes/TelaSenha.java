@@ -3,10 +3,8 @@ import javax.swing.*;
 
 public class TelaSenha extends Tela {
 	public TelaSenha() {
-		JFrame frame = new JFrame("Tela Esqueci Senha");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(300, 380);
-		frame.setLayout(null);
+		JFrame frame = new JFrame();
+		retornaFrame(frame, "REDEFINICAO DE SENHA", 300, 380);
 		
 		// TITULO
 		JPanel panelTitulo = new JPanel();
@@ -52,10 +50,7 @@ public class TelaSenha extends Tela {
 		
 		JButton btnAlterar = new JButton();
 		retornaButton(btnAlterar, "ALTERAR", 140, 0, 140, 35, panelBotoes);
-		
-		frame.add(panelCampos);
-		frame.add(panelTitulo);
-		frame.add(panelBotoes);
-		frame.setVisible(true);
+
+		adicionaPanel(new JPanel[]{panelTitulo, panelCampos, panelBotoes}, frame);
 	}
 }

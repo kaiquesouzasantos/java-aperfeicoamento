@@ -4,10 +4,7 @@ import javax.swing.*;
 public class TelaInicio extends Tela {
 	public TelaInicio(){
 		JFrame frame = new JFrame();
-		frame.setTitle("REDISP");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(350, 400);
-		frame.setLayout(null);
+		retornaFrame(frame, "INICIO", 350, 400);
 
 		JPanel panel = new JPanel();
 		retornaPanel(panel, 0, 0, 350, 400);
@@ -34,7 +31,6 @@ public class TelaInicio extends Tela {
 
 		btnSair.addActionListener(e -> System.exit(0));
 
-		frame.add(panel);
-		frame.setVisible(true);
+		adicionaPanel(new JPanel[]{panel}, frame);
 	}
 }

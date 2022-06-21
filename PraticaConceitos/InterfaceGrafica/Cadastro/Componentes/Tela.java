@@ -3,6 +3,21 @@ import javax.swing.*;
 import java.awt.*;
 
 abstract class Tela {
+    public void retornaFrame(JFrame frame, String titulo, int width, int height){
+        frame.setTitle(titulo);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(width, height);
+        frame.setLayout(null);
+    }
+
+    public void adicionaPanel(JPanel[] panels, JFrame frame){
+        for(JPanel panel:panels){
+            frame.add(panel);
+        }
+
+        frame.setVisible(true);
+    }
+
     public void retornaPanel(JPanel panel, int x, int y, int width, int height){
         panel.setBounds(x, y, width, height);
         panel.setBackground(new Color(0, 0, 0));
