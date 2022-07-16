@@ -1,3 +1,3 @@
-# JAVA-APERFEIÇOAMENTO
+# JAVA-DEV-DOJO
 
-Diretório contendo códigos específicos em Java com o intuito de aperfeiçoamento e consolidação de conhecimento.
+Repositório contendo o desenvolvimento na Maratona Java Virado no Jiraya realizado na Dev Dojo.
