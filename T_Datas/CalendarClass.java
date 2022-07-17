@@ -34,7 +34,7 @@ public class CalendarClass {
          */
         System.out.println(calendar.getFirstDayOfWeek() == Calendar.DAY_OF_WEEK);
 
-        // get() -> extrai um interio de determinada data
+        // get() -> extrai um inteiro de determinada data
         // Nos casos abaixo, com base na data, retorna o valor respectivo constante
         System.out.println(calendar.get(Calendar.DAY_OF_YEAR));
         System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
